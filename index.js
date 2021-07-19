@@ -15,7 +15,7 @@ const availNote = document.getElementsByClassName('avail_note')[0];
 // accessing result div to print the number of notes
 const resultDiv = document.getElementsByClassName('re')[0];
 
-const availDenominations = [2000, 1000, 500, 200, 100, 50, 10, 1];
+const availDenominations = [2000, 500, 100, 20, 10, 5, 1];
 
 availDenominations.forEach(note => {
     let noteDiv = document.createElement('div');
