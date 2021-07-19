@@ -50,8 +50,6 @@ submitBtn.addEventListener('click', () => {
 
     } else if(received_cash > bill_amount) {
         messages.style.display = "none"
-
-
         resultDiv.style ="display: block";
         calculateBalance(received_cash, bill_amount);
     }
@@ -59,16 +57,18 @@ submitBtn.addEventListener('click', () => {
 
 const calculateBalance = (received_cash, bill_amount) => {
     let balance = received_cash - bill_amount;
-   
+
     for( let i = 0; i< availDenominations.length; i++ ) {
-     if(balance === 0) {
-         return;
-     }
+
      let note = availDenominations[i];
      let noOfNotes = Math.floor(balance/note);
-     balance = balance - (note * noOfNotes);
-     console.log(returnNote.children, noOfNotes);
-     returnNote.children[i+1].innerText =  noOfNotes;
+
+     if(noOfNotes  > 0) {
+        balance = balance - (note * noOfNotes);
+        returnNote.children[i+1].innerText =  noOfNotes;
+    }  else if(balance === 0) {
+        return;
+    }
     }
 }
 
