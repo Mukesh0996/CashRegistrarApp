@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Cash Registrar</title>
+</head>
+<body>
+    <section class="main">
+        <h1>Cash Registrar App</h1>
+        <h4>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</h4>
+        <div class="billAmt">
+            <h2>Bill Amount:</h2>
+            <input type="text" class="bill_amount" placeholder="Enter the Amount.." name="bill_amount"/>
+            <button class="nextBtn">Next</button>
+        </div>
+        <div class="cashReceived">
+            <h2>Cash Received:</h2>
+            <input type="text" class="cash_received" placeholder="Enter the Amount.." name="cash_received"/>
+            <button class="submitBtn">Check</button>
+        </div>
+        <div class="re">
+            <h2 style="margin: 1rem 0;">Return Change:</h2>
+            <div class="result">
+                <div class="return_note">
+                    <div>No.of Notes</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="avail_note">
+                    <div>Note</div>
+                </div>
+            </div>
+        </div>
+        <div class="messages"></div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

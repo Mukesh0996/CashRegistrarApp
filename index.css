@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.main {
+    max-width: 62vh;
+    margin: 4rem auto;
+    background-color: #5B21B6;
+    border-radius: 2px;
+    color: #fff;
+    padding: 2rem;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.main h1, .main h4 {
+    margin: 1rem 0;
+}
+
+.main h1 {
+    font-weight: 500;
+}
+
+.main h4 {
+    font-weight: 300;
+} 
+
+.billAmt h2, .cashReceived h2 {
+    color: #8B5CF6;
+}
+
+.billAmt input, .cashReceived input {
+    padding: .7rem .5rem;
+    outline: none;
+    width: 100%;
+    margin: .5rem 0;
+}
+
+.submitBtn, .nextBtn {
+    padding: .6rem .6rem;
+    width: 5rem;
+    background: #8B5CF6;
+    color: white;
+    outline: none;
+    border: 1px solid #8B5CF6;
+    border-radius: 4px;
+    transition: all 0.1s ease-in;
+    margin: .5rem 0;
+    font-family: inherit;
+}
+
+.submitBtn:hover, .nextBtn:hover {
+    background: white;
+    color: #8B5CF6;
+    cursor: pointer;
+}
+
+.messages {
+    display: none;
+}
+
+.cashReceived {
+    display: none;
+}
+.re {
+    display: none;
+}
+
+.result {
+    width: 100%;
+    background: ivory;
+    height: 100px;
+    
+}
+.return_note {
+    height: 50px;
+    display: flex;
+    font-weight: lighter;
+}
+
+.return_note div {
+    width: 57.9px;
+    color: black;
+    text-align: center;
+    border: 1px solid #8B5CF6;
+    height: 100%;
+    background: #C4B5FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.avail_note {
+    height: 50px;
+    display: flex;
+    font-weight: lighter;
+}
+
+.avail_note div {
+    width: 57.9px;
+    color: black;
+    text-align: center;
+    border: 1px solid #8B5CF6;
+    height: 100%;
+    background: #C4B5FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
